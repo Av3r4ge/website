@@ -1,7 +1,6 @@
 import { HeroText } from "@/components/hero-text"
 import { BackgroundBeamsWithCollision } from "@/components/ui/exploding-beams"
 import { Tabs } from "@/components/ui/tabs"
-import { BackgroundBeams } from "@/components/ui/background-beams"
 
 export default function Home() {
   const tabs = [
