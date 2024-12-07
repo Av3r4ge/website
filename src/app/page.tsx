@@ -1,38 +1,12 @@
+'use client'
 import { HeroText } from "@/components/hero-text"
 import { BackgroundBeamsWithCollision } from "@/components/ui/exploding-beams"
-import { Tabs } from "@/components/ui/tabs"
+import { Skills } from "@/components/skills"
+import { Projects } from "@/components/projects"
+import { ShootingStars } from "@/components/ui/shooting-stars"
+import { StarsBackground } from "@/components/ui/shooting-stars-bg"
 
 export default function Home() {
-  const tabs = [
-    {
-      title: "About",
-      value: "about",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-neutral-800">
-          <p className="text-xl md:text-4xl font-bold">About me</p>
-        </div>
-      ),
-    },
-    {
-      title: "Projects",
-      value: "projects",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-white bg-neutral-800">
-          <p className="text-xl md:text-4xl font-bold">Projects</p>
-        </div>
-      )
-    },
-    {
-      title: "Skills",
-      value: "skills",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-neutral-800">
-          <p>Skills</p>
-        </div>
-      )
-    }
-    
-  ]
 
   return (
   <main className="relative overflow-hidden mx-auto  bg-neutral-950">
@@ -42,10 +16,21 @@ export default function Home() {
         { <HeroText></HeroText> }
       </BackgroundBeamsWithCollision>
 
-      <div className="relative h-150 pb-20">
+      <div className="relative">
 
-        <div id="tabs"  className="h-[20rem] md:h-[50rem] [perspective:1000px] relative b flex flex-col max-w-7xl mx-auto w-full items-start justify-start my-20">
-          <Tabs tabs={tabs} />
+        <div className="relative flex flex-col items-center w-full justify-center" id="skills">
+
+          <div className="w-full mx-auto lg:px-64 md:px-20 px-10">
+            <Skills/>
+          </div>
+        </div>
+
+        <div className="relative flex flex-col items-center w-full justify-center" id="skills">
+
+          <div className="w-full mx-auto lg:px-64 md:px-20 px-10 bg-neutral-900">
+            <Projects/>
+          </div>
+          
         </div>
 
       </div>
