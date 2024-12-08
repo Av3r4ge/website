@@ -12,8 +12,10 @@ export function Projects() {
             title: "Source Web RCON",
             description: "Originally started as a project of mine to limit access to what users had on gameservers using RCON. This is my first complete webapp featuring user authentication, database integration (MongoDB), and complete a frontend to accompany it.",
             images: [
-                "/projects/website/test.png",
-                "/projects/website/nord_purple_waves.png"
+                "/projects/rcon/one.png",
+                "/projects/rcon/two.png",
+                "/projects/rcon/three.png",
+                "/projects/rcon/four.png"
             ],
             link: "",
             stack: {
@@ -39,10 +41,9 @@ export function Projects() {
             title: "LUA 2D Particle Library",
             description: "Fast particle system written as a library developers can use in their UI in Garry's Mod",
             images: [
-                "/projects/website/test.png",
-                "/projects/website/nord_purple_waves.png"
+                "/projects/particlesystem/image.png"
             ],
-            link: "",
+            link: "https://github.com/Av3r4ge/gmod-2dparticles",
             stack: {
                 [1]: {
                     name: "LUA",
@@ -63,15 +64,15 @@ export function Projects() {
             {projects.map((item, idx) => (
 
                 <Link
-                className="relative w-full bg-neutral-950 p-6 mt-8 flex flex-wrap" 
+                className="relative w-full bg-neutral-950 py-6 mt-8 flex flex-wrap" 
                 href={item.link}
                 key={idx}
                 > 
-                    <div className="max-w-1/2 w-[55vh] h-[20vh] inline-block">
+                    <div className="max-w-1/2 w-[55vh] h-[20vh] inline-block ml-6 mr-6 mb-3">
                         <ImageCarousel className="overflow-hidden" images={item.images} ></ImageCarousel>
                     </div>
 
-                    <div className="h-full float-right overflow-y max-w-[40vh] flex flex-col ml-5">
+                    <div className="h-full float-right overflow-y max-w-[70vh] flex flex-col px-6">
                         <h2 className="font-bold text-4xl md:text-3xl sm:text-2xl text-white">
                         {item.title}
                         </h2>
@@ -80,7 +81,7 @@ export function Projects() {
                             <ProjectStack items={item.stack}/>
                         </div>
 
-                        <p className="text-white text-lg">
+                        <p className="text-white text-lg text-wrap">
                         {item.description}
                         </p>
                     </div>

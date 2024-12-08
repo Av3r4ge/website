@@ -8,10 +8,11 @@ type stack = {
 export const ProjectStack = ({
     items
 }: {
-    items: Record<string,stack>;
+    items: Partial<Record<string,stack>>;
 }) => {
-
-    const normalizedItems = Object.values(items);
+    const normalizedItems = Object.values(items).filter(
+        (item): item is stack => item !== undefined
+    );
 
     return ( 
         <div className="flex bg-neutral-900 p-3">
