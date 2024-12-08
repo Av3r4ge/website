@@ -38,6 +38,32 @@ export function Projects() {
             }
         },
         {
+            title: "This website!",
+            description: "Made with NextJS and components from Aceternity.",
+            images: [
+                "/projects/website/one.png"
+            ],
+            link: "https://github.com/Av3r4ge/website",
+            stack: {
+                [1]: {
+                    name: "NextJS",
+                    svg: "/next.svg"
+                },
+                [2]: {
+                    name: "Typescript",
+                    svg: "/typescript.svg"
+                },
+                [3]: {
+                    name: "HTML",
+                    svg: "/html.svg"
+                },
+                [4]: {
+                    name: "CSS",
+                    svg: "/css.svg"
+                },
+            }
+        },
+        {
             title: "LUA 2D Particle Library",
             description: "Fast particle system written as a library developers can use in their UI in Garry's Mod",
             images: [
@@ -60,6 +86,10 @@ export function Projects() {
 
             <ShootingStars/>
             <StarsBackground className=""/>
+
+            <p className="my-6 text-white text-xl text-wrap">
+                Due to confidentiality, none of my freelance projects are displayed here. If you would like to see more of projects please contact me.
+            </p>
 
             {projects.map((item, idx) => (
 
