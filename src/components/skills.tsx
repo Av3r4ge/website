@@ -15,20 +15,20 @@ export function Skills() {
           svg: "/docker.svg"
         },
         {
-          title: "NextJS",
-          svg: "/next.svg"
+          title: "Python",
+          svg: "/python.svg"
         },
         {
           title: "Git",
           svg: "/git.svg"
         },
         {
-          title: "LUA",
-          svg: "/lua.svg"
+          title: "NextJS",
+          svg: "/next.svg"
         },
         {
-          title: "SQL",
-          svg: "/sql.svg"
+          title: "MongoDB",
+          svg: "/mongo.svg"
         },
         {
           title: "HTML",
