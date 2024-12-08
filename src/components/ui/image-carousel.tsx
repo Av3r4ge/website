@@ -1,5 +1,4 @@
 'use client'
-import NextImage from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -13,7 +12,6 @@ export const ImageCarousel = ({
     className?: string;
 }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [loading, setLoading] = useState(false);
     const [loadedImages, setLoadedImages] = useState<string[]>([]);
 
     const handleNext = () => {
@@ -22,18 +20,17 @@ export const ImageCarousel = ({
         );
     };
 
-    const handlePrev = () => {
+    /*const handlePrev = () => {
         setCurrentIndex(( prevIndex ) =>
             prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
         );
-    };
+    };*/
     
     useEffect(() => {
         loadImages()
     }, [])
 
     const loadImages = () => {
-        setLoading(true);
         const loadPromises = images.map((image) => {
           return new Promise((resolve, reject) => {
             const img = new Image();
@@ -46,14 +43,12 @@ export const ImageCarousel = ({
         Promise.all(loadPromises)
           .then((loadedImages) => {
             setLoadedImages(loadedImages as string[]);
-            setLoading(false);
           })
           .catch((error) => console.error("Failed to load images", error));
     };
 
     useEffect( () => {
-        let interval: any
-        interval = setInterval(() => {
+        setInterval(() => {
             handleNext();
         }, 5000)
     }, [])

@@ -10,14 +10,14 @@ export function Projects() {
     const projects = [
         {
             title: "Source Web RCON",
-            description: "Originally started as a project of mine to limit access to what users had on gameservers using RCON. This is my first complete webapp featuring user authentication, database integration (MongoDB), and complete a frontend to accompany it.",
+            description: "Originally started as a project of mine to limit access to what gameserver moderators had access to using RCON. This is my first complete webapp featuring user authentication, database integration (MongoDB), and complete a frontend to accompany it.",
             images: [
                 "/projects/rcon/one.png",
                 "/projects/rcon/two.png",
                 "/projects/rcon/three.png",
                 "/projects/rcon/four.png"
             ],
-            link: "",
+            link: "https://github.com/Av3r4ge/tf-web-rcon",
             stack: {
                 [1]: {
                     name: "Javascript",
