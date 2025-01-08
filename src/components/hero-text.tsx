@@ -12,25 +12,6 @@ export function HeroText() {
     }
     
     return (
-        <div className="items-center text-center">
-            <h2 className="lg:text-7xl md:text-6xl text-5xl font-bold text-white"> Hey, I&apos;m <span> Alex </span> </h2>
-            <TextGenerateEffect className="pt-2" words={"Driven by a passion for all things I.T."}/>
-
-            <div className="mt-10 w-full items-center">
-                <button className="p-[3px] relative mr-5">
-                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-                    <div className="px-8 py-2 bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent" onClick={() => scrolltoHash("projects")}>
-                        <a className="text-2xl"> Projects </a>
-                    </div>
-                </button>
-
-                <button className="p-[3px] relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-                    <div className="px-8 py-2 bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-                        <Link href="https://github.com/av3r4ge" className="text-2xl"> Github </Link>
-                    </div>
-                </button>
-            </div>
-        </div>
+        <div></div>
     )
 }
