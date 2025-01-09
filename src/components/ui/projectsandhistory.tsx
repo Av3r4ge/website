@@ -16,7 +16,7 @@ export default function ProjectsAndHistory() {
       {
         date: "June 2020",
         title: "Freelance Work",
-        description: "Worked on commissions for gameserver plugins. Included work with UI, database integrations, and systems from request"
+        description: "Worked on commissions for gameserver plugins. Included work with UI, database integrations, and systems to clients requests."
       },
     ];
 
