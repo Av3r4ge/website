@@ -1,11 +1,11 @@
 import Image from 'next/image'
+import Link from 'next/link';
 
 interface Projects {
-    date: string;
     title: string; 
     description: string;
     image: string;
-    link?: string; 
+    link: string; 
 }
 
 export const Projects = ( {
@@ -19,14 +19,18 @@ export const Projects = ( {
         <ul>
             {items.map((item, index) => (   
                 <li key={index} className={className}>
-                    <div className="border border-purple-700 rounded bg-neutral-800">
-                        <Image src={"/projects/website/one.png"} alt='' width={200} height={50} ></Image>                        
+                    <Link href={item.link} className="border border-purple-700 rounded bg-neutral-800 flex flex-wrap items-start p-4 group/item">
+                        <Image className="aspect-video object-cover mr-4" src={item.image} alt='' width={200} height={50} ></Image>                        
 
-                        {item.date}
-                        {item.title}
-                        {item.description}
-                        {item.link}
-                    </div>
+                        <div className=' text-wrap w-1/2'>
+                            <p className="text-neutral-300 group-hover/item:text-purple-700 font-semibold text-2xl w-full"> {item.title} </p>
+
+                            <p className='text-neutral-400 text-lg'>
+                                {item.description}
+                            </p>
+                        </div>
+
+                    </Link>
                 </li>
             ))}
         </ul>
