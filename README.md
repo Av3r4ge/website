@@ -1,3 +1,4 @@
-My Portfolio Website. Made with NextJS and Aceternity
+my website. deploys with vercel.
+made with tailwind and nextjs
 
-```npm run dev``` to start the app in developer mode. will open at localhost:3000
+```npm run dev``` to start the app in dev mode
