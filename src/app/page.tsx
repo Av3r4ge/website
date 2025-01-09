@@ -6,11 +6,12 @@ import { EmailIcon } from "@/components/emailicon"
 import { Technologies } from "@/components/ui/technologies"
 import ProjectsAndHistory from "@/components/ui/projectsandhistory"
 import Link from "next/link"
+import ContactInfo from "@/components/ui/contactinfo"
 
 export default function Home() {
 
-  const copy_email = () => {
-    navigator.clipboard.writeText("contact@alxg.cc")
+  function ScrollToHash( id: string ) {
+    document.getElementById(id)?.scrollIntoView()
   }
 
   return (
@@ -35,19 +36,21 @@ export default function Home() {
           <Link href="https://github.com/av3r4ge">
             <GithubIcon className="text-neutral-600 hover:text-neutral-500 w-14 mr-4"/>
           </Link>
-          <button onClick={copy_email} >
+          <button onClick={() => ScrollToHash("contact_info")} >
             <EmailIcon className="text-neutral-600 hover:text-neutral-500 w-14"></EmailIcon>
           </button>
         </div>
       </div>
     </div>
 
-    <div>
-      <Technologies/>
+    <Technologies/>
+
+    <div className="mx-12">
+    <ProjectsAndHistory/>
     </div>
 
     <div className="mx-12">
-      <ProjectsAndHistory/>
+    <ContactInfo/>
     </div>
 
     </div>

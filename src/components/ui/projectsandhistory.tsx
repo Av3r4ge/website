@@ -9,19 +9,14 @@ export default function ProjectsAndHistory() {
         description: "During my internship, I helped in setting up vLANs, WiFi access points, wiring and creating CAT5 cables, and repairing damaged hardware."
       },
       {
-        date: "June 2022",
-        title: "Freelance Work",
-        description: "Worked on commissions for various gameserver plugins"
-      },
-      {
-        date: "Sep 2020",
+        date: "Sep 2022",
         title: "Server Hosting",
-        description: "Sold privately managed instances of game servers, voice servers, and websites"
+        description: "Privately sold managed instances of game servers, VOIP servers, and websites"
       },
       {
-        date: "Nov 2019",
-        title: "Managed Online Community",
-        description: "Ran a small game server community"
+        date: "June 2020",
+        title: "Freelance Work",
+        description: "Worked on commissions for gameserver plugins. Included work with UI, database integraiton, and logistical systems"
       },
     ];
 
