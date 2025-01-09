@@ -25,7 +25,7 @@ export default function Home() {
           loop: true,
         }}/>
 
-        <p className="lg:text-3xl text-xl max-w-7xl lg:pt-12 pt-6 text-neutral-500">  Hey there, I'm currently studying towards a career into becoming a SysAdmin. I have a passion for learning new things and enjoy the creative challenge of solving problems.<br/>Programming is one of my self-taught hobbies that I also enjoy to do. Since 2020, I've been working as a freelancer creating websites and developing plugins for various clients. </p>
+        <p className="lg:text-3xl text-xl max-w-7xl lg:pt-12 pt-6 text-neutral-500">  Hey there, I&apos;m currently studying towards a career into becoming a SysAdmin. I have a passion for learning new things and enjoy the creative challenge of solving problems.<br/>Programming is one of my self-taught hobbies that I also enjoy to do. Since 2020, I&apos;ve been working as a freelancer creating websites and developing plugins for various clients. </p>
 
         <div className="pt-8 flex flex-row">
           <Link href="https://github.com/av3r4ge">
