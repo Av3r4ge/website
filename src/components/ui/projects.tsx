@@ -29,7 +29,6 @@ export const Projects = ( {
                                 {item.description}
                             </p>
                         </div>
-
                     </Link>
                 </li>
             ))}

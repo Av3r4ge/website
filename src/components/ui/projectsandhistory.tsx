@@ -6,22 +6,22 @@ export default function ProjectsAndHistory() {
       {
         date: "Sep 2024",
         title: "IT Internship",
-        description: "During my internship, I helped in setting up vLANs, WiFi access points, wiring and creating CAT5 cables, and repairing broken Chromebooks.  "
+        description: "During my internship, I helped in setting up vLANs, WiFi access points, wiring and creating CAT5 cables, and repairing damaged hardware."
       },
       {
-        date: "Sep 2024",
-        title: "IT Internship",
-        description: "Testaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        date: "June 2022",
+        title: "Freelance Work",
+        description: "Worked on commissions for various gameserver plugins"
       },
       {
-        date: "Sep 2024",
-        title: "IT Internship",
-        description: "Testaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        date: "Sep 2020",
+        title: "Server Hosting",
+        description: "Sold privately managed instances of game servers, voice servers, and websites"
       },
       {
-        date: "Sep 2024",
-        title: "IT Internship",
-        description: "Testaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        date: "Nov 2019",
+        title: "Managed Online Community",
+        description: "Ran a small game server community"
       },
     ];
 
@@ -47,7 +47,7 @@ export default function ProjectsAndHistory() {
     ]
   
     return (
-        <div className="lg:max-w-7xl w-full mx-auto">
+        <div className="lg:max-w-7xl w-full mx-auto py-6">
 
             <div className="flex lg:flex-nowrap md:flex-nowrap flex-wrap justify-between">
                 <div className="w-full">

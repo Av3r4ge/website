@@ -14,20 +14,35 @@
 
 .carousel {
   overflow: hidden;
-  position: relative;
+  position: absolute;
   white-space: nowrap;
   display: flex;
   justify-content: space-around;
-  animation: scroll-horizontal 40s linear infinite;
+  animation: scroll-horizontal 30s linear infinite;
 }
+
+.carousel-secondary {
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  animation: scroll-horizontal 30s linear infinite;
+  left: 100%
+}
+
+.carousel-secondary {
+  animation: scroll-horizontal 30s linear infinite;
+  animation-delay: 15s
+}
+
 
 @keyframes scroll-horizontal {
   0% {
-    left: 100%;
+    left: 100%
   }
-
   100% {
-    left: -100%;
+      left: -100%
   }
 }
 
