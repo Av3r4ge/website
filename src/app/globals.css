@@ -11,3 +11,23 @@
 .no-visible-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-around;
+  animation: scroll-horizontal 40s linear infinite;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
