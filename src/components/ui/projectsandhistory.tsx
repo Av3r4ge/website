@@ -11,12 +11,12 @@ export default function ProjectsAndHistory() {
       {
         date: "Sep 2022",
         title: "Server Hosting",
-        description: "Privately sold managed instances of game servers, VOIP servers, and websites"
+        description: "Privately sold managed instances of game servers, VOIP servers, and websites."
       },
       {
         date: "June 2020",
         title: "Freelance Work",
-        description: "Worked on commissions for gameserver plugins. Included work with UI, database integraiton, and logistical systems"
+        description: "Worked on commissions for gameserver plugins. Included work with UI, database integrations, and systems from request"
       },
     ];
 
